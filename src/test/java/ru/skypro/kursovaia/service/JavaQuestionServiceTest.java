@@ -62,7 +62,7 @@ class JavaQuestionServiceTest {
 
     @Test
     public void shouldReturnRandomQuestion() {
-            assertThat(questionService.getRandomQuestion())
+            Assertions.assertThat(questionService.getRandomQuestion())
                 .isNotNull()
                 .isIn(questionService.getAll());
     }
